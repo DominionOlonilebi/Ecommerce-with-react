@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import PayPalBtns from './Components/PayPalBtns';
+import Products from './Components/Products';
+import Footer from './Components/Footer';
+import {BrowserRouter as Router } from 'react-router-dom';
+import Routte from './Components/Routte';
+import SolarNav from './Components/SolarNav';
+import Background from './Components/Background';
 
-function App() {
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+    <SolarNav/>
+    <Background/>
+      <Footer/>
+    
+    </>
   );
 }
 

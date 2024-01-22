@@ -1,13 +1,538 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.brand {
+  margin-left: 70px;
+}
+.brand .logo {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+}
+.header {
+  background-color: rgb(38, 42, 204);
+  margin-bottom: -20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.header .carts {
+  color: #fff;
+}
+.header .nav_link {
+  color: #fff;
+}
+.header #nav_button {
+  border-color: #fff;
+  outline: 1px solid#fff;
+  background-color: transparent;
+  padding: 7px 22px;
+  font-weight: 600;
+}
+.header #nav_button a {
+  color: #fff;
+  text-decoration: none;
+}
+.background_container {
+  background-color: rgb(38, 42, 204);
+  padding-bottom: 40px;
+}
+.background_container h1 .heading {
+  font-family: "Times New Roman", Times, serif;
+}
+.background_container h1 {
+  padding-top: 42%;
+  padding-bottom: 2%;
+  font-weight: 700;
+  font-size: 53px;
+  color: #fff;
+  line-height: 40px;
+}
+.background_container h1 .typewriter {
+  color: #f1c40f;
+  margin-top: -42%;
+  font-size: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bouncing-container {
+  position: relative;
+  height: 100px; /* Set the height of the container */
+
+}
+
+.bouncing-image {
+  padding-top: 45%;
+  animation: bounce 27s infinite;
+  margin-left: 47px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-35px); /* Adjust the bounce height */
+  }
+
+  60% {
+    transform: translateY(-25px); /* Adjust the bounce height */
+  }
+  90% {
+    transform: translateY(-15px); /* Adjust the bounce height */
+  }
+}
+
+.background_container p {
+  color: #fff;
+  font-size: 16px;
+}
+.background_container .get {
+  padding: 17px 37px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #fff;
+  border-color: #fff;
+  color: rgb(38, 42, 204);
+  border-radius: 13px;
+  margin-bottom: 30px;
+}
+.background_container .get a{
+  color: rgb(38, 42, 204);
+  text-decoration: none;
+}
+.background_container .get a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.background_container .logins {
+  padding: 14px 46px;
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: rgb(38, 42, 204);
+  border-color: rgb(38, 42, 204);
+  color: #fff;
+  outline: 1px solid #fff;
+  border-radius: 13px;
+  margin-bottom: 30px;
+}
+.background_container .logins a{
+  color: #fff;
+  text-decoration: none;
+}
+.background_container .logins a:hover{
+  color: rgb(38, 42, 204);
+  text-decoration: none;
+}
+.background_container .logins:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: rgb(38, 42, 204);
+  border-radius: 13px;
+}
+.background_container .circles {
+  color: #f1c40f;
+}
+.background_container .list {
+  color: #fff;
+}
+.background_container .lists {
+  color: #fff;
+}
+.background_container .listing {
+  margin-left: 250px;
+}
+.background_container .listing_list {
+  margin-top: 80px;
+}
+.background_section h5 {
+  color: rgb(22, 25, 207);
+  font-weight: 600;
+  font-size: 21px;
+}
+.cards_container {
+  margin-top: 190px;
+  margin-bottom: 80px;
+}
+.cards_container .card-fluid {
+  border-left: 4px solid black;
+  line-height: 27px;
+  font-weight: 400;
+}
+.cards_container .img-fluid {
+  margin-top: -90px;
+}
+.cards_container .card-fluid {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.8s;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(126, 125, 125, 0.4);
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+.cards_container .card_text {
+  color: rgb(119, 117, 117);
+  font-size: 16px;
+}
+.cards_container .card-fluid:hover {
+  transform: translateY(-10px);
+}
+.cards_container h3 {
+  color: rgb(22, 25, 207);
+  font-weight: 700;
+  font-size: 35px;
+  margin-top: -70px;
+  margin-bottom: 30px;
+}
+.cards_container h3 span {
+  color: #f1c40f;
+}
+.card_container {
+  text-align: center;
+}
+.card_container .card-fluid {
+  border-top: 4px solid black;
+  padding-bottom: 10px;
+}
+.card_container .card-fluid a {
+  color: #eebf03;
+}
+.card_container .card-fluid h5 {
+  margin-bottom: -10px;
+}
+.card_container .card-fluid .img-fluid {
+  margin-left: 135px;
+}
+.card_container .card-fluid {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.8s;
+  box-sizing: border-box;
+  box-shadow: 0 4px 2px rgba(209, 209, 209, 0.4);
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+.card_container h1 {
+  color: rgb(31, 34, 206);
+  font-size: 50px;
+  font-weight: 600;
+}
+.card_container .cards_text {
+  color: rgb(119, 117, 117);
+  font-size: 16px;
+  margin-bottom: -7px;
+}
+.card_container .cardss_text {
+  color: rgb(119, 117, 117);
+  font-size: 16px;
+  padding-bottom: 32px;
+}
+.card_container .cardssx_text {
+  color: rgb(119, 117, 117);
+  font-size: 16px;
+  padding-bottom: 9px;
+}
+.card_container .cardsx_text {
+  color: rgb(119, 117, 117);
+  font-size: 16px;
+  padding-bottom: 81px;
+}
+.card_container .card-fluid:hover {
+  transform: translateX(-20px);
+}
+.slide-down-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.slide-down-container.visible {
+  max-height: 1000px; /* Adjust the max-height based on your content */
+  transition: max-height 15.5s ease-in-out;
+}
+
+.slide-down-text {
+  opacity: 0;
+  transition: opacity 15.5s ease-in-out infinite;
+}
+
+.slide-down-container.visible .slide-down-text {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+.plan_section {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.plan_section .plan_button {
+  margin-bottom: 70px;
+  margin-top: 20px;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.plan_section h2 {
+  margin-bottom: 40px;
+  color: rgb(31, 34, 206);
+  font-weight: 600;
+  font-size: 40px;
+}
+.plan_section h3 {
+  color: rgb(31, 34, 206);
+  font-size: 26px;
+}
+.solar_corp {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.solar_corp h1 {
+  color: rgb(31, 34, 206);
+}
+.solar_corp .awesome {
+  width: 100px;
+  height: 100px;
+  color: #c2bfbf;
+}
+.solar_corp h4 {
+  margin-top: 40px;
+}
+.featured_container {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.featured_container h1 {
+  color: rgb(31, 34, 206);
+}
+.featured_container p {
+  margin-bottom: 20px;
+}
+.featured_container .star {
+  color: #eebf03;
+}
+.why-choose-us {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.why-choose-us h2 {
+  color: rgb(31, 34, 206);
+  margin-bottom: 40px;
+}
+.why-choose-us h3 {
+  color: rgb(31, 34, 206);
+  font-size: 26px;
+}
+.embed_video {
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.blogs {
+  background-color: rgb(228, 227, 227);
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.blogs h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: rgb(128, 128, 128);
+}
+.blogs .blogs_button a {
+  color: #fff;
+  text-decoration: none;
+}
+.question_container h6{
+  color: rgb(31, 34, 206);
+
+}
+.question_container h1{
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.products_container .products_card {
+  background-image: linear-gradient(rgb(107, 107, 250), white);
+  border-color: rgb(214, 214, 214);
+  margin-bottom: 30px;
+}
+.products_container a {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+}
+.products_container .cards_body {
+  margin-top: 70px;
+}
+.products_container h5 {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
+.products_container h6 {
+  color: rgb(252, 115, 3);
+  font-weight: 700;
+  font-size: 17px;
+}
+.products_container p {
+  color: black;
+}
+.products_container h4 {
+  font-weight: 700;
+  color: blue;
+}
+.products_container .logo {
+  margin-left: 40px;
+}
+.products_container .add_to_cart_btn {
+  padding: 15px 80px;
+  border-radius: 20px;
+  border: 2px solid rgb(79, 79, 253);
+  color: rgb(79, 79, 253);
+}
+.products_container .add_to_cart_btn:hover {
+  background-color: #fff;
+  color: rgb(4, 101, 247);
+}
+
+
+.prod-container{
+  padding: 30px 40px;
+  width: 100%;
+}
+.prod-container .my-prod{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.prod-container .my-prod .box{
+  background: rgb(212, 212, 212);
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 10px 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.myproduct{
+  margin-bottom: 30%;
+}
+.prod-container .my-prod .box .img-fluid{
+  height: 190px;
+  width: 220px;
+}
+.prod-container .my-prod .box .detail h5{
+margin-top: -30px;
+text-transform: capitalize;
+color: rgb(39, 39, 39);
+font-size: 16px;
+}
+.prod-container .my-prod .box .detail .details{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.prod-container .my-prod .box .detail{
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.prod-container .my-prod .box .detail h3{
+margin-top: 8px;
+font-size: 18px;
+text-transform: uppercase;
+font-weight: 100;
+color: rgb(230, 3, 3);
+}
+.prod-container .my-prod .box .detail p{
+font-size: 17px;
+font-weight: 600;
+}
+.prod-container .my-prod .box .detail button{
+  background-color: rgb(59, 0, 59);
+  border-color: rgb(59, 0, 59);
+  margin-top: 8px;
+  margin-left: 25%;
+  color: #fff;
+  padding: 5px 22px;
+  outline: none;
+  border: none;
+}
+
+.login_container{
+  background-color: rgb(236, 236, 236);
+padding-top: 120px;
+padding-bottom: 150px;
+}
+.login_container .login{
+  background-color: #fff;
+  padding-bottom: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.login_container .login h1{
+  padding-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+.login_container .login .login_button{
+  font-size: 15px;
+  background-color: rgb(22, 25, 175);
+  border: none;
+}
+.login_container .login .login_button:hover{
+  font-size: 15px;
+  background-color: rgb(37, 38, 148);
+  border: none;
+}
+.signup_container{
+  background-color: rgb(236, 236, 236);
+padding-top: 80px;
+padding-bottom: 100px;
+}
+.signup_container .signup{
+  background-color: #fff;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.signup_container .signup h1{
+  padding-top: 50px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+.signup_container .signup .signup_button{
+  font-size: 15px;
+  background-color: rgb(22, 25, 175);
+  border: none;
+}
+.signup_container .signup .signup_button:hover{
+  font-size: 15px;
+  background-color: rgb(37, 38, 148);
+  border: none;
+}
+
+.footers {
+  background-color: rgb(22, 25, 175);
+  color: #fff;
+}
+.footers .footers_row {
+  padding-top: 40px;
+  padding-bottom: 95px;
+}
+.footers .footers_row h6 {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footers .footers_row p {
+  line-height: 6px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: silver;
 }
