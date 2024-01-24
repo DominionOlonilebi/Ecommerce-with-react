@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  overflow-x: none;
 }
 .brand {
   margin-left: 70px;
@@ -18,8 +19,11 @@
 .header .carts {
   color: #fff;
 }
-.header .nav_link {
+.header .navs .nav-link {
   color: #fff;
+}
+.header .navs .nav-link:hover{
+  color: #f1c40f;
 }
 .header #nav_button {
   border-color: #fff;
@@ -47,10 +51,8 @@
   color: #fff;
   line-height: 40px;
 }
-.background_container h1 .typewriter {
+.background_container h1 .type_color {
   color: #f1c40f;
-  margin-top: -42%;
-  font-size: 50px;
 }
 
 .bouncing-container {
@@ -191,13 +193,18 @@
 }
 .card_container {
   text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
 }
 .card_container .card-fluid {
   border-top: 4px solid black;
   padding-bottom: 10px;
 }
 .card_container .card-fluid a {
-  color: #eebf03;
+  color: #fccc0e;
+}
+.card_container .card-fluid a:hover{
+  color: rgb(22, 25, 207);
 }
 .card_container .card-fluid h5 {
   margin-bottom: -10px;
@@ -266,19 +273,41 @@
 .plan_section {
   margin-top: 70px;
   margin-bottom: 50px;
+  background-color: rgb(243, 242, 242);
+  padding-top: 35px;
 }
-.plan_section .plan_button {
-  margin-bottom: 70px;
-  margin-top: 20px;
+.pictures{
+  background-color: rgb(247, 247, 247);
+  margin-top: 100px;
+  padding-top: 5px;
+}
+.card_container .plan_button {
+  margin-bottom: 30px;
+  margin-top: 80px;
   padding: 14px 25px;
   border-radius: 30px;
   font-size: 18px;
 }
+.card_container .plan_button .shopping_btn{
+  color: #fff;
+  text-decoration: none;
+}
+.card_me{
+  background-color: rgb(243, 242, 242);
+
+}
+.card_container .revolution_row{
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+.plan_section .plan_row{
+  padding-top: 20px;
+}
 .plan_section h2 {
   margin-bottom: 40px;
-  color: rgb(31, 34, 206);
-  font-weight: 600;
-  font-size: 40px;
+ color: #eebf02;
+  font-weight: 700;
+  font-size: 38px;
 }
 .plan_section h3 {
   color: rgb(31, 34, 206);
@@ -292,11 +321,7 @@
 .solar_corp h1 {
   color: rgb(31, 34, 206);
 }
-.solar_corp .awesome {
-  width: 100px;
-  height: 100px;
-  color: #c2bfbf;
-}
+
 .solar_corp h4 {
   margin-top: 40px;
 }
@@ -458,6 +483,20 @@ font-weight: 600;
   padding: 5px 22px;
   outline: none;
   border: none;
+}
+.testimony{
+  
+}
+.testimony h1{
+text-align: center;
+color: rgb(31, 34, 206);
+}
+.testimony .testimony_star{
+  color: #eebf03;
+
+}
+.testimony .card-fluid{
+  line-height: 35px;
 }
 
 .login_container{

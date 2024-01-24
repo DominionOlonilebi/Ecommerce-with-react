@@ -4,6 +4,7 @@ import { faCheck, faCircle, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react'
 import { Button, Card, CardHeader, Carousel, CarouselItem, Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 const Cardss = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,17 +23,17 @@ const Cardss = () => {
             <div className={`slide-down-container ${isVisible ? "visible" : ""}`}>
             <p className="slide-down-text">
             <Card className='card-fluid my-4'>
-                <h5 className='mx-3'><strong>Get Access To Affordable Energy</strong></h5>
+                <h5 className='mx-3 pt-3'><strong>Get Access To Affordable Energy</strong></h5>
       <Card.Body className='card_text'>We provide the option of payment by installment for our Solar products and services leaving our customers to enjoy more electricity at a cheaper price Whether you are a remote worker, freelancer, Sme or a large corporate business you have access to this opportunity.</Card.Body>
     </Card>
     
             <Card className='card-fluid my-4'>
-                <h5 className='mx-3'><strong>Backup You Can Trust</strong></h5>
+                <h5 className='mx-3 pt-3'><strong>Backup You Can Trust</strong></h5>
       <Card.Body className='card_text'>Worried about unexpected outages? Solarcorp comes with a reliable battery backup system that ensures you have uninterrupted power even when the sun takes a brea..</Card.Body>
     </Card>
     
             <Card className='card-fluid my-4'>
-                <h5 className='mx-3'><strong>Seamless Transition</strong></h5>
+                <h5 className='mx-3 pt-3'><strong>Seamless Transition</strong></h5>
       <Card.Body className='card_text'>We realize your energy need increase over time. We've got you covered. You can upgrade the hours of solar power you require Whether it's 6hrs, 8hrs, 12hrs or 24hrs you pay for the hours you require to be productive and live a comfortable lifestyle with our solar products.</Card.Body>
     </Card>  
             </p>
@@ -74,16 +75,16 @@ const Cardss = () => {
     </Card>
           </Col>
         </Row>
+        <Row className='d-flex flex-row justify-content-center'>
+<Col md={3}>
+          <Button className='plan_button '><Link to='/product' className='shopping_btn'>Start Shopping</Link> </Button>
+          </Col>
+</Row>
       </Container>
 
       <Container fluid className='plan_section'>
         <Container>
-          <Row className='d-flex flex-row justify-content-center'>
-<Col md={3}>
-          <Button className='plan_button '>Start Shopping</Button>
-          </Col>
-</Row>
-<Row>
+<Row className='plan_row'>
             <Col md={6}>
               <img src='Images/sol6.png' alt=''className='img-fluid'/>
             </Col>
@@ -111,12 +112,11 @@ const Cardss = () => {
 <Row>
           <Col md={4}>
             <h4> 1</h4>
-            <FontAwesomeIcon icon={faCircle} className='awesome'> </FontAwesomeIcon>
             <h5>Create Account</h5>
             <p>Welcome to SolarCorp! Get started on your journey to clean energy by creating an account. Signing up is quick and easy – just provide a few details, and you're on your way to a sustainable future.</p>
           </Col>
           <Col md={4}>
-            <h4>2</h4>
+           <h4>2</h4>
             <h5>Select Product Plan</h5>
             <p>Choose the perfect solar plan for you.You can either apply for our convenient Buy Now Pay Later (BNPL) option, spreading the cost over manageable installments, or opt for outright payment for immediate ownership. The choice is yours!</p>
           </Col>
@@ -129,10 +129,10 @@ const Cardss = () => {
       </Container>
 
 
-      <Container fluid>
+      <Container fluid className='card_me'>
         <Container className='card_container'>
-          <Row>
-            <Col>
+          <Row className='revolution_row d-flex flex-row justify-content-center'>
+            <Col md={4}>
             <Card className='card-fluid my-3 mx-4'>
             <img src='Images/ssol1.png' alt='' width={40} height={40} className='img-fluid mt-4 mb-2'/> 
                 <h5><strong>Solarcorp Revolution</strong></h5>
@@ -226,7 +226,7 @@ const Cardss = () => {
       </Container>
 
 
-      <Container fluid>
+      <Container fluid className='pictures'>
         <Container>
           <Row className='d-flex flex-row justify-content-center mt-5'>
             <Col md={6}>

@@ -33,7 +33,7 @@ const Background = () => {
 </div>
 </Col>
 <Col md={5} sm={12}>
-  <div className="bouncing-container">
+  <div className="bouncing-container mb-5">
       <img src="Images/sol5.png" alt="Bouncing Image" className="bouncing-image" width={400} height={700}/>
     </div>
 </Col>

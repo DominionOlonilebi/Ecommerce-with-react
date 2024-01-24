@@ -5,37 +5,51 @@ import { Accordion, Card, Carousel, CarouselItem, Col, Container, Row } from 're
 
 const Testimonial = () => {
   return (
-    <div>
-        <Container className='cards_container'>
-        <h3>Testimonial</h3>
-        <Row>
-            <Col md={6}>
+    <section className='py-5'>
+        <Container className="py-5 testimony">
+        <h1 className='mb-3'>Testimonial</h1>
+        <Row className='d-flex flex-row justify-content-center'> 
+            <Col md={7}>
               <Carousel slide>
                 <Carousel.Item>
-            <Card className='card-fluid my-3'>
-                <div><strong>Get Access To Affordable Energy</strong></div>
+            <Card className='card-fluid py-4'>
+                <h6 className='mx-3'><strong>Get Access To Affordable Energy</strong></h6>
       <Card.Body>We provide the option of payment by installment for our Solar products and services leaving our customers to enjoy more electricity at a cheaper price Whether you are a remote worker, freelancer, Sme or a large corporate business you have access to this opportunity.
       </Card.Body>
-      <div>
-      <FontAwesomeIcon icon={faStar} width={16} height={16} />
-      <FontAwesomeIcon icon={faStar} width={16} height={16} />
-      <FontAwesomeIcon icon={faStar} width={16} height={16} />
-      <FontAwesomeIcon icon={faStar} width={16} height={16} />
-      <FontAwesomeIcon icon={faStarHalf} width={16} height={16} />
+      <div className='mx-3'>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStarHalf} width={16} height={16} className='testimony_star'/>
       </div>
     </Card>
     </Carousel.Item>
 
     <Carousel.Item>
-            <Card className='card-fluid my-3'>
-                <div><strong>Backup You Can Trust</strong></div>
+            <Card className='card-fluid py-4'>
+                <h6 className='mx-3'><strong>Backup You Can Trust</strong></h6>
       <Card.Body>Worried about unexpected outages? Solarcorp comes with a reliable battery backup system that ensures you have uninterrupted power even when the sun takes a brea..</Card.Body>
+      <div className='mx-3'>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStarHalf} width={16} height={16} className='testimony_star'/>
+      </div>
     </Card>
     </Carousel.Item>
     <Carousel.Item>
-            <Card className='card-fluid my-3'>
-                <div><strong>Seamless Transition</strong></div>
+            <Card className='card-fluid py-4'>
+                <h6 className='mx-3'><strong>Seamless Transition</strong></h6>
       <Card.Body>We realize your energy need increase over time. We've got you covered. You can upgrade the hours of solar power you require Whether it's 6hrs, 8hrs, 12hrs or 24hrs you pay for the hours you require to be productive and live a comfortable lifestyle with our solar products.</Card.Body>
+      <div className='mx-3'>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStar} width={16} height={16} className='testimony_star'/>
+      <FontAwesomeIcon icon={faStarHalf} width={16} height={16} className='testimony_star'/>
+      </div>
     </Card>
     </Carousel.Item>
     </Carousel>
@@ -98,7 +112,7 @@ const Testimonial = () => {
         
       </Container>
 
-    </div>
+    </section>
   )
 }
 

@@ -15,16 +15,16 @@ const SolarNav = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto offset-6 navs">
+            <Nav className="ml-auto offset-6 navs" variant="underline">
               <Link to="/" className="nav-link">
               </Link>
-              <Link to="/products" className="nav-link mx-2 text-white">
+              <Link to="/products" className="nav-link mx-2 ">
                 Products
               </Link>
-              <Link to="/blog" className="nav-link mx-2 text-white">
+              <Link to="/blog" className="nav-link mx-2 ">
                 Blog
               </Link>
-              <Link to="/cart" className="nav-link mx-2 text-white">
+              <Link to="/cart" className="nav-link mx-2 ">
                <CIcon icon={cilCart} width={20} height={20} className='carts'/> Cart
               </Link>
               <Button id='nav_button' className="nav-link mx-2 pt-0"> <a href='/signup' >Get Started </a></Button>

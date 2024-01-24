@@ -1,24 +1,27 @@
-import React, { useEffect } from 'react';
+// TypingComponent.jsx
+
+import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 const MyTyped = () => {
+  const typingRef = useRef(null);
+
   useEffect(() => {
     const options = {
       strings: ['Pay Small Small', 'Pay Gradually'],
-      typeSpeed: 130,
-      backSpeed: 55,
+      typeSpeed: 50,
+      backSpeed: 30,
       loop: true,
     };
 
-    const typed = new Typed('.typewriter', options);
+    const typed = new Typed(typingRef.current, options);
 
     return () => {
-      // Cleanup on component unmount
-      typed.destroy();
+      typed.destroy(); // cleanup to prevent memory leaks
     };
   }, []);
 
-  return <h1 className="typewriter"></h1>;
+  return <span ref={typingRef}></span>;
 };
 
 export default MyTyped;
