@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, fs } from "./config/Config";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 
 
 const Signup = () => {
@@ -20,14 +21,9 @@ const Signup = () => {
   const handleSignup = (e) => {
     e.preventDefault();
     setIsLoading(true);
-
-    auth.createUserWithEmailAndPassword(email, password).then((credentials) => {
+const auth = getAuth()
+    createUserWithEmailAndPassword(auth, email, password).then((credentials) => {
       console.log(credentials);
-      fs.collection('users').doc(credentials.user.uid).set({
-        FullName: fullName,
-        Email: email,
-        Password: password
-      }).then(() => {
         setSuccessMsg('Signup Successful. You will now automatically be redirected to a Login Page');
         setFullname('');
         setEmail('');
@@ -37,7 +33,6 @@ const Signup = () => {
           setSuccessMsg('');
           navigate('/login');
         }, 3000);
-      }).catch(error => setErrorMsg(error.message));
     }).catch((error) => {
       setErrorMsg(error.message);
     }).finally(() => {

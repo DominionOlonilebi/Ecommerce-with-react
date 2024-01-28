@@ -21,8 +21,8 @@ const [isLoading, setIsLoading] = useState(false);
 const handleLogin=(e)=> {
   e.preventDefault();
   setIsLoading(true);
-
-  getAuth.signInWithEmailAndPassword(email, password,).then(() =>{
+const auth = getAuth()
+  signInWithEmailAndPassword(auth, email, password,).then(() =>{
       setSuccessMsg('Login Successful. You will now automatically be redirected to Product Page');
       setEmail('');
       setPassword('');
@@ -32,7 +32,7 @@ const handleLogin=(e)=> {
         navigate('/product');
       }, 3000 )
     } ).catch(error => {
-      setErrorMsg(error.message);
+      setErrorMsg('User not registered. Please Signup');
     })
     .finally(() => {
       setIsLoading(false);
@@ -84,8 +84,11 @@ const handleLogin=(e)=> {
 
     {errorMsg&&<>
       <br/> <br/>
-    <div className="error-msg">{errorMsg} </div>
+    <p className="error-msg">{errorMsg} </p>
     
+
+
+
     </>}
     
     </div>

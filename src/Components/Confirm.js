@@ -17,7 +17,7 @@ const Confirm = () => {
             <p>Description -</p>
             <p>Versatile Applications: Used for both residential and commercial purposes, incl</p>
             <Button className='confirm_button'><a href='/product'>Continue Shopping</a> </Button>
-            <Button className='checkout_button'><a href='/cart'>Checkout</a> </Button>
+            <Button className='checkout_button mx-3'><a href='/cart'>Checkout</a> </Button>
             </Col>
         </Row>
       </Container>

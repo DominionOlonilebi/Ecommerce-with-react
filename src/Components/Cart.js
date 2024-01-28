@@ -41,7 +41,7 @@ const Cart = ({ cartItem, setCartItem }) => {
         <>
           <h4 className='null'>Cart Is Empty. Please select a product</h4>
           <Button className='nowshop'>
-            <Link to='/product'>Shop Now</Link>
+            <a href='/product'>Shop Now</a>
           </Button>
         </>
       )}
@@ -108,9 +108,9 @@ const Cart = ({ cartItem, setCartItem }) => {
         >
           Pay Now {`${cartItem.length}`}
         </Button>
-        <Button><a href='/'>Pay Later</a></Button>
+        <Button className='mx-3'><a href='/'>Pay Later</a></Button>
 
-              <Button className='clear_cart' onClick={clearCart}>
+              <Button className='clear_cart ' onClick={clearCart}>
                 Clear Cart
               </Button>
             </Col>
