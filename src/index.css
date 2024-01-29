@@ -85,12 +85,6 @@
   margin: 0 10px;
 }
 @media only screen and (max-width: 570px) {
-  /* Hide the image on smaller screens */
-  .products_container .products_card {
-    max-width: 100%;
-  height: auto;
-  margin: 0 10px;
-  }
   .embed_video {
     max-width: 100%;
   height: auto;
