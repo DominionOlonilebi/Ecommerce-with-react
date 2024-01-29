@@ -1,9 +1,12 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
+import SolarNav from './SolarNav'
+import Footer from './Footer'
 
 const Blog = () => {
   return (
     <div>
+      <SolarNav/>
       <Container fluid className='blogs'>
         <Container>
       <h1>404</h1>
@@ -16,6 +19,7 @@ const Blog = () => {
 </Row>
 </Container>
 </Container>
+<Footer/>
     </div>
   )
 }

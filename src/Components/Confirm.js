@@ -1,9 +1,12 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
+import SolarNav from './SolarNav'
+import Footer from './Footer'
 
 const Confirm = () => {
   return (
     <div>
+      <SolarNav/>
       <Container fluid>
         <Row>
             <Col md={6} sm={12} >
@@ -21,6 +24,7 @@ const Confirm = () => {
             </Col>
         </Row>
       </Container>
+      <Footer/>
     </div>
   )
 }

@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth, fs } from "./config/Config";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import SolarNav from "./SolarNav";
+import Footer from "./Footer";
 
 
 const Signup = () => {

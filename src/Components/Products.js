@@ -1,9 +1,12 @@
 import React from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import SolarNav from './SolarNav'
+import Footer from './Footer'
 
 const Products = () => {
   return (
     <div>
+      <SolarNav/>
       <Container fluid className='products_container'>
         <Row className='d-flex flex-row justify-content-center'>
           
@@ -322,6 +325,7 @@ thank you</p>
         
                 </Col>
       </Container>
+      <Footer/>
     </div>
   )
 }

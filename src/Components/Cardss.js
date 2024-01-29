@@ -230,10 +230,10 @@ const Cardss = () => {
         <Container>
           <Row className='d-flex flex-row justify-content-center mt-5'>
             <Col md={6}>
-              <img src='Images/sol3.png' alt='' className='img-fluid mx-5 mt-5 mb-3' width={380}/>
+              <img src='Images/sol3.png' alt='' className='img-fluid mx-2 mt-5 mb-3' width={430}/>
             </Col>
             <Col md={6}>
-              <img src='Images/sol3.png' alt='' className='img-fluid mx-5 mt-5 mb-3' width={380}/>
+              <img src='Images/sol3.png' alt='' className='img-fluid mx-2 mt-5 mb-3' width={430}/>
             </Col>
           </Row>
         </Container>

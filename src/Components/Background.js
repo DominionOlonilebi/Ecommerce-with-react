@@ -43,7 +43,7 @@ const Background = () => {
 
 <h5 className='mx-4'><i>Trusted By</i></h5>
 <div className='mx-5'>
-    <Carousel interval={1400}>
+    <Carousel interval={1400} className='carousel_container'>
       <Carousel.Item>
         <img src='Images/dsol1.png' alt='' className='img1 mx-4'/>
         <img src='Images/dsol2.png' alt='' className='img2 mx-4'/>

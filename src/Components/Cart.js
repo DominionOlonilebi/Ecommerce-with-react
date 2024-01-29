@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PayPalBtns from './PayPalBtns';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import SolarNav from './SolarNav';
+import Footer from './Footer';
 
 const Cart = ({ cartItem, setCartItem }) => {
   const increase = (product) => {
@@ -37,6 +39,7 @@ const Cart = ({ cartItem, setCartItem }) => {
 
   return (
     <>
+    <SolarNav/>
       {cartItem.length === 0 && (
         <>
           <h4 className='null'>Cart Is Empty. Please select a product</h4>
@@ -121,6 +124,7 @@ const Cart = ({ cartItem, setCartItem }) => {
       <div className='check'>
         {isCheckout && <PayPalBtns total={totalPrice} item={cartItem} />}
       </div>
+      <Footer/>
     </>
   );
 };

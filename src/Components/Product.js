@@ -1,10 +1,13 @@
 import React from 'react'
 import Detail from './Details'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import SolarNav from './SolarNav'
+import Footer from './Footer'
 
 const Product = ({addtocart}) => {
   return (
     <>
+    <SolarNav/>
     <Container fluid className='products_container'>
         <Row className='d-flex flex-row justify-content-center'>
       {
@@ -46,7 +49,7 @@ const Product = ({addtocart}) => {
       }
       </Row>
     </Container>
-
+    <Footer/>
     </>
   )
 }

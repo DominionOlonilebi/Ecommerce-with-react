@@ -4,6 +4,8 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './config/Config';
+import SolarNav from "./SolarNav";
+import Footer from "./Footer";
 
 
 
@@ -42,6 +44,7 @@ const auth = getAuth()
 
   return (
     <>
+
     <Container fluid className="login_container">
       <Row className="d-flex flex-row justify-content-center">
         <Col md={3}>
@@ -86,8 +89,6 @@ const auth = getAuth()
       <br/> <br/>
     <p className="error-msg">{errorMsg} </p>
     
-
-
 
     </>}
     
