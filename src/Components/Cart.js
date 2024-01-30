@@ -41,12 +41,12 @@ const Cart = ({ cartItem, setCartItem }) => {
     <>
     <SolarNav/>
       {cartItem.length === 0 && (
-        <>
+        <div className='empty'>
           <h4 className='null'>Cart Is Empty. Please select a product</h4>
           <Button className='nowshop'>
             <a href='/product'>Shop Now</a>
           </Button>
-        </>
+        </div>
       )}
       <Container className='cart_container'>
         <Row>

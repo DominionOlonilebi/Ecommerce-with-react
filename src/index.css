@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  overflow-x: hidden;
 }
 .brand {
   margin-left: 70px;
@@ -65,14 +64,60 @@
 .bouncing-image {
   padding-top: 45%;
   animation: bounce 27s infinite;
-  margin-left: 47px;
+  margin-left: 37px;
+}
+.hoverIncrease{
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  transition-duration: 0.4s;
+}
+.hoverIncrease:hover{
+  transform: scale(1.2);
+}
+.hoverIncrease img{
+  height: 30px;
 }
 @media only screen and (max-width: 770px) {
   /* Hide the image on smaller screens */
   .bouncing-image {
-    display: none;
+    width: 280px;
+    height: 520px;
+    margin-top: -15%;
+    margin-bottom: 10%;
+  }
+  .header .brand img{
+    display: flex;
+  }
+  .background_container h1{
+    font-size: 35px;
+    margin-top: 12%;
+  }
+  .background_container p{
+    font-size: 17px;
+  }
+  .products_container .products_card{
+    margin-top: 25%;
+  }
+  .pay_container{
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+  .empty{
+    margin-top: 25%;
+    margin-bottom: 5%;
+  }
+  .confirm_container .img-fluid{
+    margin-top: 18%;
+  }
+
+  .footers .footers_row p{
+    font-size: 17px;
+    line-height: 70px;
   }
 }
+
 .background_section .carousel_container {
   display: flex;
   justify-content: center;
@@ -456,8 +501,20 @@
   background-color: #fff;
   color: rgb(4, 101, 247);
 }
-
-
+.confirm_container{
+  margin-top: 13%;
+  margin-bottom: 20%;
+}
+.null{
+  margin-top: 12%;
+}
+.nowshop{
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.pay_container{
+  margin-bottom: 12%;
+}
 .prod-container{
   padding: 30px 40px;
   width: 100%;

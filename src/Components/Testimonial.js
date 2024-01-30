@@ -107,7 +107,7 @@ const Testimonial = () => {
           </Col>
         </Row>
         <div className='embed_video'>
-        <iframe width="1074" height="589" src="https://www.youtube.com/embed/0q3e2G_Or_s" title="How to Make Portable Solar Inverter - Free Energy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="589" src="https://www.youtube.com/embed/0q3e2G_Or_s" title="How to Make Portable Solar Inverter - Free Energy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         
       </Container>

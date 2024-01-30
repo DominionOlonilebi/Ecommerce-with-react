@@ -8,7 +8,8 @@ import Cardss from './Cardss'
 import Sections from './Sections'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import MyTyped from './MyTyped'
+import MyTyped from './MyTyped';
+import Float from './Float';
 
 
 const Background = () => {
@@ -34,7 +35,7 @@ const Background = () => {
 </Col>
 <Col md={5} sm={12}>
   <div className="bouncing-container mb-5">
-      <img src="Images/sol5.png" alt="Bouncing Image" className="bouncing-image" width={400} height={700}/>
+      <img src="Images/sol5.png" alt="Bouncing Image" className="bouncing-image" width={300} height={590}/>
     </div>
 </Col>
 </Row>
@@ -42,63 +43,7 @@ const Background = () => {
 </Container>
 
 <h5 className='mx-4'><i>Trusted By</i></h5>
-<div className='mx-5'>
-    <Carousel interval={1400} className='carousel_container'>
-      <Carousel.Item>
-        <img src='Images/dsol1.png' alt='' className='img1 mx-4'/>
-        <img src='Images/dsol2.png' alt='' className='img2 mx-4'/>
-        <img src='Images/dsol3.png' alt='' className='img3 mx-4'/>
-        <img src='Images/dsol4.png' alt='' className='img4 mx-4'/>
-        <img src='Images/dsol5.png' alt='' className='img5 mx-4'/>
-        <img src='Images/dsol6.png' alt='' className='img6 mx-4'/>
-        <img src='Images/dsol1.png' alt='' className='img7 mx-4'/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src='Images/dsol2.png' alt='' className='img1 mx-4'/>
-        <img src='Images/dsol3.png' alt='' className='img2 mx-4'/>
-        <img src='Images/dsol4.png' alt='' className='img3 mx-4'/>
-        <img src='Images/dsol5.png' alt='' className='img4 mx-4'/>
-        <img src='Images/dsol6.png' alt='' className='img5 mx-4'/>
-        <img src='Images/dsol1.png' alt='' className='img6 mx-4'/>
-        <img src='Images/dsol2.png' alt='' className='img7 mx-4'/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src='Images/dsol3.png' alt='' className='img1 mx-4'/>
-        <img src='Images/dsol4.png' alt='' className='img2 mx-4'/>
-        <img src='Images/dsol5.png' alt='' className='img3 mx-4'/>
-        <img src='Images/dsol6.png' alt='' className='img4 mx-4'/>
-        <img src='Images/dsol1.png' alt='' className='img5 mx-4'/>
-        <img src='Images/dsol2.png' alt='' className='img6 mx-4'/>
-        <img src='Images/dsol3.png' alt='' className='img7 mx-4'/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src='Images/dsol4.png' alt='' className='img1 mx-4'/>
-        <img src='Images/dsol5.png' alt='' className='img2 mx-4'/>
-        <img src='Images/dsol6.png' alt='' className='img3 mx-4'/>
-        <img src='Images/dsol1.png' alt='' className='img4 mx-4'/>
-        <img src='Images/dsol3.png' alt='' className='img5 mx-4'/>
-        <img src='Images/dsol3.png' alt='' className='img6 mx-4'/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src='Images/dsol5.png' alt='' className='img1 mx-4'/>
-        <img src='Images/dsol6.png' alt='' className='img2 mx-4'/>
-        <img src='Images/dsol1.png' alt='' className='img3 mx-4'/>
-        <img src='Images/dsol2.png' alt='' className='img4 mx-4'/>
-        <img src='Images/dsol3.png' alt='' className='img5 mx-4'/>
-        <img src='Images/dsol4.png' alt='' className='img6 mx-4'/>
-        <img src='Images/dsol5.png' alt='' className='img7 mx-4'/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src='Images/dsol6.png' alt='' className='img1 mx-4'/>
-        <img src='Images/dsol1.png' alt='' className='img2 mx-4'/>
-        <img src='Images/dsol2.png' alt='' className='img3 mx-4'/>
-        <img src='Images/dsol3.png' alt='' className='img4 mx-4'/>
-        <img src='Images/dsol4.png' alt='' className='img5 mx-4'/>
-        <img src='Images/dsol5.png' alt='' className='img6 mx-4'/>
-        <img src='Images/dsol6.png' alt='' className='img7 mx-4'/>
-      </Carousel.Item>
-    </Carousel>
-    </div>
+<Float/>
     </div>
     <Cardss/>
     <Sections/>

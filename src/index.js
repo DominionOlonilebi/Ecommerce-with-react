@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -14,22 +14,35 @@ import Details from './Components/Details';
 import Product from './Components/Product';
 import Confirm from './Components/Confirm';
 import PayPalBtns from './Components/PayPalBtns';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import Float from './Components/Float';
+import Cardss from './Components/Cardss';
+
 
 const RootComponent = () => {
-  const [cartItem, setCartItem] = useState([]);
 
-  const addtocart = (product) => {
-    const exsit = cartItem.find((x) => {
-      return x.id === product.id;
-    });
+useEffect(() =>{
+  Aos.init();
+  Aos.refresh();
+}, [])
 
-    if (exsit) {
-      alert("This Product has Already been Added to Cart");
-    } else {
-      setCartItem([...cartItem, { ...product, quantity: 1 }]);
-    }
-    console.log(setCartItem);
-  };
+
+
+const [cartItem, setCartItem] = useState([]);
+
+const addtocart = (product) => {
+  const exsit = cartItem.find((x) => {
+    return x.id === product.id;
+  });
+
+  if (exsit) {
+    alert("This Product has Already been Added to Cart");
+  } else {
+    setCartItem([...cartItem, { ...product, quantity: 1 }]);
+  }
+  console.log(setCartItem);
+};
 
   return (
     <React.StrictMode>
@@ -46,9 +59,11 @@ const RootComponent = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/details" element={<Details />} />
-          <Route path="/product" element={<Product addtocart={addtocart} />} />
+          <Route path="/product" element={<Product addtocart={addtocart}/>} />
           <Route path="/confirm" element={<Confirm />} />
           <Route path="/paypalbtns" element={<PayPalBtns />} />
+          <Route path="/float" element={<Float/>}/>
+          <Route path="/cardss" element={<Cardss/>}/>
         </Routes>
       </Router>
     </React.StrictMode>

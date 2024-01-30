@@ -7,7 +7,7 @@ const Confirm = () => {
   return (
     <div>
       <SolarNav/>
-      <Container fluid>
+      <Container fluid className='confirm_container'>
         <Row>
             <Col md={6} sm={12} >
             <img src='Images/sol7.png' alt='' className='img-fluid'/>

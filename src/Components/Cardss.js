@@ -22,20 +22,26 @@ const Cardss = () => {
             <Col md={6} className='mb-5'>
             <div className={`slide-down-container ${isVisible ? "visible" : ""}`}>
             <p className="slide-down-text">
+                            <div data-aos="fade-up" data-aos-duration="2500" className='absolute top=[100px] bottom=[-20px]'>
             <Card className='card-fluid my-4'>
                 <h5 className='mx-3 pt-3'><strong>Get Access To Affordable Energy</strong></h5>
       <Card.Body className='card_text'>We provide the option of payment by installment for our Solar products and services leaving our customers to enjoy more electricity at a cheaper price Whether you are a remote worker, freelancer, Sme or a large corporate business you have access to this opportunity.</Card.Body>
     </Card>
+    </div>
     
+                                <div data-aos="fade-up" data-aos-duration="2500" className='absolute top=[100px] bottom=[-20px]'>
             <Card className='card-fluid my-4'>
                 <h5 className='mx-3 pt-3'><strong>Backup You Can Trust</strong></h5>
       <Card.Body className='card_text'>Worried about unexpected outages? Solarcorp comes with a reliable battery backup system that ensures you have uninterrupted power even when the sun takes a brea..</Card.Body>
     </Card>
+    </div>
     
+    <div data-aos="fade-up" data-aos-duration="2500" className='absolute top=[100px] bottom=[-20px]'>
             <Card className='card-fluid my-4'>
                 <h5 className='mx-3 pt-3'><strong>Seamless Transition</strong></h5>
       <Card.Body className='card_text'>We realize your energy need increase over time. We've got you covered. You can upgrade the hours of solar power you require Whether it's 6hrs, 8hrs, 12hrs or 24hrs you pay for the hours you require to be productive and live a comfortable lifestyle with our solar products.</Card.Body>
     </Card>  
+    </div>
             </p>
           </div>
             </Col>
@@ -50,30 +56,42 @@ const Cardss = () => {
       <Container className='card_container'>
         <h1>Our Solution</h1>
         <Row>
+        
           <Col md={4}>
+          <div data-aos="fade-left" data-aos-duration="2500" className='absolute left=[100px] right=[-20px]'>
           <Card className='card-fluid my-3 mx-4'>
             <img src='Images/ssol1.png' alt='' width={40} height={40} className='img-fluid mt-4 mb-2'/> 
                 <h5><strong>Home or residential solution</strong></h5>
       <Card.Body className='cards_text'>We have provided power solution recommended for home or residence with 1 bedroom, 2-3 bedroom, duplex or mansion.</Card.Body>
       <a href='/cart'>Learn More</a>
     </Card>
+    </div>
           </Col>
+          
+
           <Col md={4}>
+          <div data-aos="fade-left" data-aos-duration="2500" className='absolute left=[100px] right=[-20px]'>
           <Card className='card-fluid my-3 mx-4'>
           <img src='Images/ssol2.png' alt='' width={40} height={40} className='img-fluid mt-4 mb-2'/>
                 <h5><strong>SMEs and Business solution</strong></h5>
       <Card.Body className='cardss_text'>We have provided power solution recommended for small, medium or large business.</Card.Body>
       <a href='/cart'>Learn More</a>
     </Card>
+    </div>
           </Col>
+          
+
           <Col md={4}>
+          <div data-aos="fade-left" data-aos-duration="2500" className='absolute left=[100px] right=[-20px]'>
           <Card className='card-fluid my-3 mx-4'>
           <img src='Images/ssol3.png' alt='' width={40} height={40} className='img-fluid mt-4 mb-2'/>
                 <h5><strong>Schools solution</strong></h5>
       <Card.Body className='cardssx_text'>We have provided power solution recommended for schools with different amount of classroms and sections.</Card.Body>
       <a href='/cart'>Learn More</a>
     </Card>
+    </div>
           </Col>
+          
         </Row>
         <Row className='d-flex flex-row justify-content-center'>
 <Col md={3}>
@@ -133,25 +151,31 @@ const Cardss = () => {
         <Container className='card_container'>
           <Row className='revolution_row d-flex flex-row justify-content-center'>
             <Col md={4}>
+            <div data-aos="fade-left" data-aos-duration="2500" className='absolute left=[100px] right=[-20px]'>
             <Card className='card-fluid my-3 mx-4'>
             <img src='Images/ssol1.png' alt='' width={40} height={40} className='img-fluid mt-4 mb-2'/> 
                 <h5><strong>Solarcorp Revolution</strong></h5>
       <Card.Body className='cardsx_text'>We believe that average Nigeria shouldn't have to go broke to get access to solar electricity.</Card.Body>
     </Card>
+    </div>
           </Col>
           <Col md={4}>
+          <div data-aos="fade-left" data-aos-duration="2500" className='absolute left=[100px] right=[-20px]'>
           <Card className='card-fluid my-3 mx-4'>
           <img src='Images/ssol2.png' alt='' width={40} height={40} className='img-fluid mt-4 mb-2'/>
                 <h5><strong>Vision</strong></h5>
       <Card.Body className='cardss_text'>Solarcorp is designed to meet the energy needs of both residential and commercial spaces. Whether you're powering your home or business, we've got you covered.</Card.Body>
     </Card>
+    </div>
           </Col>
           <Col md={4}>
+          <div data-aos="fade-left" data-aos-duration="2500" className='absolute left=[100px] right=[-20px]'>
           <Card className='card-fluid my-3 mx-4'>
           <img src='Images/ssol3.png' alt='' width={40} height={40} className='img-fluid mt-4 mb-2'/>
                 <h5><strong>Finance</strong></h5>
       <Card.Body className='cardssx_text'>By collaborating with credible financial partners, we provide the option of payment by installment for our Solar products and services, leaving our customers to enjoy more electricity at a cheaper price.</Card.Body>
     </Card>
+    </div>
             </Col>
           </Row>
         </Container>

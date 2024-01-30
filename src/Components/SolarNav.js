@@ -24,8 +24,10 @@ const SolarNav = () => {
               <Link to="/blog" className="nav-link mx-2 ">
                 Blog
               </Link>
+
+              
               <Link to="/cart" className="nav-link mx-2 ">
-               <CIcon icon={cilCart} width={20} height={20} className='carts'/> Cart
+               <CIcon icon={cilCart} width={20} height={20} className='carts'/>Cart
               </Link>
               <Button id='nav_button' className="nav-link mx-2 pt-0"> <a href='/signup' >Get Started </a></Button>
               
