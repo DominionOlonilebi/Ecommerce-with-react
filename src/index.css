@@ -1,5 +1,9 @@
 * {
   margin: 0;
+  overflow-x: hidden;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 .brand {
   margin-left: 70px;
@@ -82,14 +86,9 @@
 @media only screen and (max-width: 770px) {
   /* Hide the image on smaller screens */
   .bouncing-image {
-    width: 280px;
-    height: 520px;
-    margin-top: -15%;
-    margin-bottom: 10%;
+    display: none;
   }
-  .header .brand img{
-    display: flex;
-  }
+  
   .background_container h1{
     font-size: 35px;
     margin-top: 12%;
