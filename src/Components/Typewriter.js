@@ -1,11 +1,7 @@
-
-
-
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Typewriter = ({ text, delay, infinite }) => {
-  const [myText, setMyText] = useState('');
+  const [myText, setMyText] = useState("");
   const [myIndex, setMyIndex] = useState(0);
 
   useEffect(() => {
@@ -18,7 +14,7 @@ const Typewriter = ({ text, delay, infinite }) => {
       }, delay);
     } else if (infinite) {
       setMyIndex(0);
-      setMyText('');
+      setMyText("");
     }
 
     return () => clearTimeout(timeout);

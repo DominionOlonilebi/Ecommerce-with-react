@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { PayPalButtons } from '@paypal/react-paypal-js';
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import React, { useEffect, useRef, useState } from "react";
+import { PayPalButtons } from "@paypal/react-paypal-js";
+import { ListGroup, ListGroupItem } from "react-bootstrap";
 
 const PayPalBtns = ({ item, total }) => {
   const [palP, setPalP] = useState(false);
@@ -12,12 +12,12 @@ const PayPalBtns = ({ item, total }) => {
       .Buttons({
         createOrder: (data, actions) => {
           return actions.order.create({
-            intent: 'CAPTURE',
+            intent: "CAPTURE",
             purchase_units: [
               {
-                description: 'Shoe store checkout',
+                description: "Shoe store checkout",
                 amount: {
-                  currency_code: 'USD',
+                  currency_code: "USD",
                   value: total.toFixed(2),
                 },
               },
@@ -50,7 +50,7 @@ const PayPalBtns = ({ item, total }) => {
       <ListGroup>
         {item.map((item, index) => (
           <ListGroupItem key={index}>
-            {item.name} - ${item.value ? item.value.toFixed(2) : 'N/A'}
+            {item.name} - ${item.value ? item.value.toFixed(2) : "N/A"}
           </ListGroupItem>
         ))}
         <div>Total: ${total.toFixed(2)}</div>

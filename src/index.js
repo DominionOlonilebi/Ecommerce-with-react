@@ -1,48 +1,44 @@
-import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Blog from './Components/Blog';
-import Cart from './Components/Cart';
-import Products from './Components/Products';
-import Login from './Components/Login';
-import Signup from './Components/Signup';
-import Profile from './Components/Profile';
-import Details from './Components/Details';
-import Product from './Components/Product';
-import Confirm from './Components/Confirm';
-import PayPalBtns from './Components/PayPalBtns';
-import Aos from 'aos';
-import 'aos/dist/aos.css'
-import Float from './Components/Float';
-import Cardss from './Components/Cardss';
-
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Blog from "./Components/Blog";
+import Cart from "./Components/Cart";
+import Products from "./Components/Products";
+import Login from "./Components/Login";
+import Signup from "./Components/Signup";
+import Profile from "./Components/Profile";
+import Details from "./Components/Details";
+import Product from "./Components/Product";
+import Confirm from "./Components/Confirm";
+import PayPalBtns from "./Components/PayPalBtns";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Float from "./Components/Float";
+import Cardss from "./Components/Cardss";
 
 const RootComponent = () => {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
 
-useEffect(() =>{
-  Aos.init();
-  Aos.refresh();
-}, [])
+  const [cartItem, setCartItem] = useState([]);
 
+  const addtocart = (product) => {
+    const exsit = cartItem.find((x) => {
+      return x.id === product.id;
+    });
 
-
-const [cartItem, setCartItem] = useState([]);
-
-const addtocart = (product) => {
-  const exsit = cartItem.find((x) => {
-    return x.id === product.id;
-  });
-
-  if (exsit) {
-    alert("This Product has Already been Added to Cart");
-  } else {
-    setCartItem([...cartItem, { ...product, quantity: 1 }]);
-  }
-  console.log(setCartItem);
-};
+    if (exsit) {
+      alert("This Product has Already been Added to Cart");
+    } else {
+      setCartItem([...cartItem, { ...product, quantity: 1 }]);
+    }
+    console.log(setCartItem);
+  };
 
   return (
     <React.StrictMode>
@@ -53,22 +49,28 @@ const addtocart = (product) => {
           <Route path="/blog" element={<Blog />} />
           <Route
             path="/cart"
-            element={<Cart addtocart={addtocart} cartItem={cartItem} setCartItem={setCartItem} />}
+            element={
+              <Cart
+                addtocart={addtocart}
+                cartItem={cartItem}
+                setCartItem={setCartItem}
+              />
+            }
           />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/details" element={<Details />} />
-          <Route path="/product" element={<Product addtocart={addtocart}/>} />
+          <Route path="/product" element={<Product addtocart={addtocart} />} />
           <Route path="/confirm" element={<Confirm />} />
           <Route path="/paypalbtns" element={<PayPalBtns />} />
-          <Route path="/float" element={<Float/>}/>
-          <Route path="/cardss" element={<Cardss/>}/>
+          <Route path="/float" element={<Float />} />
+          <Route path="/cardss" element={<Cardss />} />
         </Routes>
       </Router>
     </React.StrictMode>
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RootComponent />);

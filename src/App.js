@@ -12,11 +12,9 @@ const App = () => {
   
   return (
     <>
-    
     <SolarNav/>
     <Background/>
       <Footer/>
-    
     </>
   );
 }

@@ -25,7 +25,7 @@
 .header .navs .nav-link {
   color: #fff;
 }
-.header .navs .nav-link:hover{
+.header .navs .nav-link:hover {
   color: #f1c40f;
 }
 .header #nav_button {
@@ -62,7 +62,6 @@
 .bouncing-container {
   position: relative;
   height: 100px; /* Set the height of the container */
-
 }
 
 .bouncing-image {
@@ -70,17 +69,17 @@
   animation: bounce 27s infinite;
   margin-left: 37px;
 }
-.hoverIncrease{
+.hoverIncrease {
   padding: 10px;
   text-align: center;
   display: grid;
   justify-content: center;
   transition-duration: 0.4s;
 }
-.hoverIncrease:hover{
+.hoverIncrease:hover {
   transform: scale(1.2);
 }
-.hoverIncrease img{
+.hoverIncrease img {
   height: 30px;
 }
 @media only screen and (max-width: 770px) {
@@ -88,30 +87,30 @@
   .bouncing-image {
     display: none;
   }
-  
-  .background_container h1{
+
+  .background_container h1 {
     font-size: 35px;
     margin-top: 12%;
   }
-  .background_container p{
+  .background_container p {
     font-size: 17px;
   }
-  .products_container .products_card{
+  .products_container .products_card {
     margin-top: 25%;
   }
-  .pay_container{
+  .pay_container {
     margin-top: 10%;
     margin-bottom: 20%;
   }
-  .empty{
+  .empty {
     margin-top: 25%;
     margin-bottom: 5%;
   }
-  .confirm_container .img-fluid{
+  .confirm_container .img-fluid {
     margin-top: 18%;
   }
 
-  .footers .footers_row p{
+  .footers .footers_row p {
     font-size: 17px;
     line-height: 70px;
   }
@@ -131,14 +130,17 @@
 @media only screen and (max-width: 570px) {
   .embed_video {
     max-width: 100%;
-  height: auto;
-  margin: 0 10px;
+    height: auto;
+    margin: 0 10px;
   }
 }
 
-
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
 
@@ -168,11 +170,11 @@
   border-radius: 13px;
   margin-bottom: 30px;
 }
-.background_container .get a{
+.background_container .get a {
   color: rgb(38, 42, 204);
   text-decoration: none;
 }
-.background_container .get a:hover{
+.background_container .get a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -188,11 +190,11 @@
   border-radius: 13px;
   margin-bottom: 30px;
 }
-.background_container .logins a{
+.background_container .logins a {
   color: #fff;
   text-decoration: none;
 }
-.background_container .logins a:hover{
+.background_container .logins a:hover {
   color: rgb(38, 42, 204);
   text-decoration: none;
 }
@@ -273,7 +275,7 @@
 .card_container .card-fluid a {
   color: #fccc0e;
 }
-.card_container .card-fluid a:hover{
+.card_container .card-fluid a:hover {
   color: rgb(22, 25, 207);
 }
 .card_container .card-fluid h5 {
@@ -346,7 +348,7 @@
   background-color: rgb(243, 242, 242);
   padding-top: 35px;
 }
-.pictures{
+.pictures {
   background-color: rgb(247, 247, 247);
   margin-top: 100px;
   padding-top: 5px;
@@ -358,24 +360,23 @@
   border-radius: 30px;
   font-size: 18px;
 }
-.card_container .plan_button .shopping_btn{
+.card_container .plan_button .shopping_btn {
   color: #fff;
   text-decoration: none;
 }
-.card_me{
+.card_me {
   background-color: rgb(243, 242, 242);
-
 }
-.card_container .revolution_row{
+.card_container .revolution_row {
   padding-top: 100px;
   margin-bottom: 50px;
 }
-.plan_section .plan_row{
+.plan_section .plan_row {
   padding-top: 20px;
 }
 .plan_section h2 {
   margin-bottom: 40px;
- color: #eebf02;
+  color: #eebf02;
   font-weight: 700;
   font-size: 38px;
 }
@@ -383,7 +384,7 @@
   color: rgb(31, 34, 206);
   font-size: 26px;
 }
-.pay_container a{
+.pay_container a {
   text-decoration: none;
   color: #fff;
 }
@@ -445,20 +446,24 @@
   color: #fff;
   text-decoration: none;
 }
-.question_container h6{
+.question_container h6 {
   color: rgb(31, 34, 206);
-
 }
-.question_container h1{
+.question_container h1 {
   margin-bottom: 30px;
   font-weight: 700;
 }
 .products_container .products_card {
-  background-image: linear-gradient(rgb(76, 108, 177),rgb(176, 186, 206),rgb(235, 234, 234), white);
+  background-image: linear-gradient(
+    rgb(76, 108, 177),
+    rgb(176, 186, 206),
+    rgb(235, 234, 234),
+    white
+  );
   border-color: rgb(214, 214, 214);
   margin-bottom: 30px;
 }
-.products_container{
+.products_container {
   margin-top: 12%;
   margin-bottom: 10%;
 }
@@ -500,30 +505,30 @@
   background-color: #fff;
   color: rgb(4, 101, 247);
 }
-.confirm_container{
+.confirm_container {
   margin-top: 13%;
   margin-bottom: 20%;
 }
-.null{
+.null {
   margin-top: 12%;
 }
-.nowshop{
+.nowshop {
   margin-top: 2%;
   margin-bottom: 5%;
 }
-.pay_container{
+.pay_container {
   margin-bottom: 12%;
 }
-.prod-container{
+.prod-container {
   padding: 30px 40px;
   width: 100%;
 }
-.prod-container .my-prod{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+.prod-container .my-prod {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.prod-container .my-prod .box{
+.prod-container .my-prod .box {
   background: rgb(212, 212, 212);
   margin-top: 20px;
   overflow: hidden;
@@ -531,40 +536,40 @@ flex-wrap: wrap;
   cursor: pointer;
   margin-bottom: 20px;
 }
-.myproduct{
+.myproduct {
   margin-bottom: 30%;
 }
-.prod-container .my-prod .box .img-fluid{
+.prod-container .my-prod .box .img-fluid {
   height: 190px;
   width: 220px;
 }
-.prod-container .my-prod .box .detail h5{
-margin-top: -30px;
-text-transform: capitalize;
-color: rgb(39, 39, 39);
-font-size: 16px;
+.prod-container .my-prod .box .detail h5 {
+  margin-top: -30px;
+  text-transform: capitalize;
+  color: rgb(39, 39, 39);
+  font-size: 16px;
 }
-.prod-container .my-prod .box .detail .details{
+.prod-container .my-prod .box .detail .details {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
-.prod-container .my-prod .box .detail{
+.prod-container .my-prod .box .detail {
   margin-top: 10px;
   padding-bottom: 30px;
 }
-.prod-container .my-prod .box .detail h3{
-margin-top: 8px;
-font-size: 18px;
-text-transform: uppercase;
-font-weight: 100;
-color: rgb(230, 3, 3);
+.prod-container .my-prod .box .detail h3 {
+  margin-top: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: rgb(230, 3, 3);
 }
-.prod-container .my-prod .box .detail p{
-font-size: 17px;
-font-weight: 600;
+.prod-container .my-prod .box .detail p {
+  font-size: 17px;
+  font-weight: 600;
 }
-.prod-container .my-prod .box .detail button{
+.prod-container .my-prod .box .detail button {
   background-color: rgb(59, 0, 59);
   border-color: rgb(59, 0, 59);
   margin-top: 8px;
@@ -574,86 +579,83 @@ font-weight: 600;
   outline: none;
   border: none;
 }
-.testimony{
-  
-}
-.testimony h1{
-text-align: center;
-color: rgb(31, 34, 206);
-}
-.testimony .testimony_star{
-  color: #eebf03;
 
+.testimony h1 {
+  text-align: center;
+  color: rgb(31, 34, 206);
 }
-.testimony .card-fluid{
+.testimony .testimony_star {
+  color: #eebf03;
+}
+.testimony .card-fluid {
   line-height: 35px;
 }
 
-.login_container{
+.login_container {
   background-color: rgb(236, 236, 236);
-padding-top: 120px;
-padding-bottom: 150px;
+  padding-top: 120px;
+  padding-bottom: 150px;
 }
-.login_container .login{
+.login_container .login {
   background-color: #fff;
   padding-bottom: 60px;
   padding-left: 25px;
   padding-right: 25px;
 }
-.login_container .login h1{
+.login_container .login h1 {
   padding-top: 40px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 600;
   font-size: 40px;
 }
-.login_container .login .login_button{
+.login_container .login .login_button {
   font-size: 15px;
   background-color: rgb(22, 25, 175);
   border: none;
 }
-.login_container .login .login_button:hover{
+.login_container .login .login_button:hover {
   font-size: 15px;
   background-color: rgb(37, 38, 148);
   border: none;
 }
-.signup_container{
+.signup_container {
   background-color: rgb(236, 236, 236);
-padding-top: 80px;
-padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
-.signup_container .signup{
+.signup_container .signup {
   background-color: #fff;
   padding-bottom: 80px;
   padding-left: 50px;
   padding-right: 50px;
 }
-.signup_container .signup h1{
+.signup_container .signup h1 {
   padding-top: 50px;
   margin-bottom: 35px;
   text-align: center;
   font-weight: 600;
   font-size: 40px;
 }
-.signup_container .signup .signup_button{
+.signup_container .signup .signup_button {
   font-size: 15px;
   background-color: rgb(22, 25, 175);
   border: none;
 }
-.signup_container .signup .signup_button:hover{
+.signup_container .signup .signup_button:hover {
   font-size: 15px;
   background-color: rgb(37, 38, 148);
   border: none;
 }
-.nowshop a{
+.nowshop a {
   color: #fff;
   text-decoration: none;
 }
-.confirm_button a{
+.confirm_button a {
   color: #fff;
   text-decoration: none;
 }
-.checkout_button a{
+.checkout_button a {
   color: #fff;
   text-decoration: none;
 }
